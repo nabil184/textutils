@@ -5,3 +5,7 @@ def word_count(text: str) -> int:
 def character_count(text: str) -> int:
     """Return the number of characters in the given text."""
     return len(text)
+
+def reverse(text: str) -> str:
+    """Return the given text in reverse order."""
+    return text[::-1]
