@@ -1,4 +1,3 @@
-
 import pytest
 
 from textutils import capitalize_words

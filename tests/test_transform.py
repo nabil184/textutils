@@ -1,4 +1,3 @@
-
 import pytest
 
 from textutils import character_count, reverse, word_count

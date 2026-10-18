@@ -1,4 +1,3 @@
-
 """A lightweight Python library for text processing."""
 
 from .casing import capitalize_words

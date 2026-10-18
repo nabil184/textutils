@@ -1,4 +1,3 @@
-
 def capitalize_words(text: str) -> str:
     """Capitalize the first letter of each word.
 

@@ -1,4 +1,3 @@
-
 def word_count(text: str) -> int:
     """Count the number of words in a text.
 
