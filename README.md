@@ -101,6 +101,58 @@ Check code quality with Ruff:
 python -m ruff check .
 ```
 
+## Continuous Integration
+
+This project uses GitHub Actions to automatically check
+code quality and run the test suite.
+
+The CI workflow runs on Pull Requests targeting `main`
+and on pushes to `main`.
+
+Four environments are tested:
+
+- Ubuntu 22.04 with Python 3.11
+- Ubuntu 22.04 with Python 3.12
+- macOS 15 with Python 3.11
+- macOS 15 with Python 3.12
+
+Each CI job installs the project, checks Black and Ruff,
+and executes pytest.
+
+## Pre-commit
+
+The project uses pre-commit to run Black and Ruff
+automatically before commits.
+
+Install the development dependencies:
+
+```bash
+python -m pip install -e ".[dev]"
+```
+
+Install the Git hook:
+
+```bash
+python -m pre_commit install
+```
+
+Run all hooks manually:
+
+```bash
+python -m pre_commit run --all-files
+```
+
+## Tests
+
+Tests are organized inside each package, close to
+the corresponding implementation.
+
+Run the full test suite:
+
+```bash
+python -m pytest -v
+```
+
 ## Contributing
 
 Contributions are welcome.

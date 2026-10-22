@@ -7,6 +7,18 @@ All notable changes to this project will be documented in this file.
 
 ### Added
 
+- Pre-commit hooks for Black and Ruff
+- GitHub Actions continuous integration workflow
+- Four CI environments across Ubuntu, macOS and Python versions
+
+### Changed
+
+- Reorganized the library into subpackages
+- Moved tests next to their corresponding modules
+- Updated package discovery and pytest configuration
+
+### Added
+
 - Word frequency utility contributed through a Pull Request
 - Automated tests using pytest
 - Parametrized tests for normal and edge cases
