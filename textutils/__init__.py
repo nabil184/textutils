@@ -1,8 +1,8 @@
 """A lightweight Python library for text processing."""
 
 from .casing import capitalize_words
-from .transform import character_count, reverse, word_count
-from .word_frequency import word_frequency
+from .counting import character_count, word_count, word_frequency
+from .transform import reverse
 
 __all__ = [
     "word_count",
