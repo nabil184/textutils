@@ -6,7 +6,7 @@ from textutils import character_count, word_count
 @pytest.mark.parametrize(
     "text, expected",
     [
-        ("Hello world", 3),
+        ("Hello world", 2),
         ("", 0),
         ("   ", 0),
         ("one   two\nthree", 3),
