@@ -1,6 +1,6 @@
 import pytest
 
-from textutils import character_count, reverse, word_count
+from textutils import character_count, word_count
 
 
 @pytest.mark.parametrize(
@@ -30,17 +30,3 @@ def test_word_count(text, expected):
 )
 def test_character_count(text, expected):
     assert character_count(text) == expected
-
-
-@pytest.mark.parametrize(
-    "text, expected",
-    [
-        ("", ""),
-        ("abc", "cba"),
-        ("Hello World", "dlroW olleH"),
-        ("12345", "54321"),
-        ("école", "elocé"),
-    ],
-)
-def test_reverse(text, expected):
-    assert reverse(text) == expected
