@@ -1,4 +1,3 @@
-
 """Tests for the reverse function."""
 
 import pytest
