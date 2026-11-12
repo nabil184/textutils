@@ -29,6 +29,15 @@ Install the package locally:
 python -m pip install -e .
 ```
 
+Install the published package from PyPI:
+
+```bash
+python -m pip install textutils-nabil184
+```
+
+The distribution name on PyPI is `textutils-nabil184`,
+while the Python import name remains `textutils`.
+
 ## Usage
 
 ```python
