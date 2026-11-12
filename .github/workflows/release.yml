@@ -48,8 +48,17 @@ jobs:
               )
           PY
 
-      - name: Install build tools
-        run: python -m pip install --upgrade build twine
+      - name: Install development and build tools
+        run: python -m pip install ".[dev]" build twine
+
+      - name: Check formatting
+        run: python -m black --check .
+
+      - name: Check code quality
+        run: python -m ruff check .
+
+      - name: Run tests
+        run: python -m pytest -q
 
       - name: Build distributions
         run: python -m build
