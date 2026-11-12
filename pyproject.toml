@@ -3,8 +3,8 @@ requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "textutils"
-version = "0.1.0"
+name = "textutils-nabil184"
+version = "0.2.0"
 description = "A lightweight Python library for common text-processing operations."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -18,6 +18,11 @@ dev = [
     "ruff==0.9.7",
     "pre-commit>=3,<5",
 ]
+
+[project.urls]
+Homepage = "https://github.com/nabil184/textutils"
+Repository = "https://github.com/nabil184/textutils"
+Issues = "https://github.com/nabil184/textutils/issues"
 
 [tool.setuptools.packages.find]
 where = ["."]
