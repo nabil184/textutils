@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -9,6 +9,8 @@ description = "A lightweight Python library for common text-processing operation
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = []
+license = "MIT"
+license-files = ["LICENSE"]
 
 [project.optional-dependencies]
 dev = [
@@ -23,6 +25,9 @@ dev = [
 Homepage = "https://github.com/nabil184/textutils"
 Repository = "https://github.com/nabil184/textutils"
 Issues = "https://github.com/nabil184/textutils/issues"
+
+[tool.setuptools]
+include-package-data = false
 
 [tool.setuptools.packages.find]
 where = ["."]
