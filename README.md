@@ -16,20 +16,9 @@ The library currently provides:
 
 ## Installation
 
-Clone the repository:
+Requires Python 3.10 or newer.
 
-```bash
-git clone https://github.com/nabil184/textutils.git
-cd textutils
-```
-
-Install the package locally:
-
-```bash
-python -m pip install -e .
-```
-
-Install the published package from PyPI:
+After the first PyPI release is published, install the package with:
 
 ```bash
 python -m pip install textutils-nabil184
@@ -70,9 +59,11 @@ Hello Open Source
 
 ## Development
 
-Install the development dependencies:
+Clone the repository and install the package with its development dependencies:
 
 ```bash
+git clone https://github.com/nabil184/textutils.git
+cd textutils
 python -m pip install -e ".[dev]"
 ```
 
@@ -89,6 +80,8 @@ Run tests with coverage:
 ```bash
 python -m pytest --cov=textutils --cov-branch --cov-report=term-missing
 ```
+
+Tests are organized inside each subpackage, close to the corresponding implementation.
 
 ### Code quality
 
@@ -149,17 +142,6 @@ Run all hooks manually:
 
 ```bash
 python -m pre_commit run --all-files
-```
-
-## Tests
-
-Tests are organized inside each package, close to
-the corresponding implementation.
-
-Run the full test suite:
-
-```bash
-python -m pytest -v
 ```
 
 ## Contributing
